@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-
 // src/App.js
 import Dashboard from './components/Dashboard';
 import ProductManagement from './components/ProductManagement';

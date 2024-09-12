@@ -1,38 +1,103 @@
+/* General styles for the app container */
 .App {
   text-align: center;
+  background: linear-gradient(135deg, #e0f2f1, #b2dfdb); /* Light teal gradient background */
+  color: #333; /* Dark gray text color for better readability */
+  font-family: Arial, sans-serif; /* Modern font */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Styles for the app header */
 .App-header {
-  background-color: #282c34;
+  background-color: #004d40; /* Dark teal background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff; /* White text color */
+  border-bottom: 5px solid #00796b; /* Medium teal border at the bottom */
 }
 
+/* Styles for the links */
 .App-link {
-  color: #61dafb;
+  color: #4db6ac; /* Teal for links */
+  text-decoration: none;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hover effect for links */
+.App-link:hover {
+  color: #00796b; /* Darker teal on hover */
+  text-decoration: underline;
 }
+
+/* Styles for message display */
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.message.success {
+  background-color: #d0f0c0; /* Pale green background */
+  color: #2e7d32; /* Dark green text color */
+}
+
+.message.error {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text color */
+}
+
+/* Styles for input fields and buttons */
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  width: 200px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #00796b; /* Medium teal background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Styles for form and layout */
+form {
+  background-color: #ffffff; /* White background for form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+  display: inline-block;
+  margin: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+h2 {
+  color: #004d40; /* Dark teal color for heading */
+}
+
