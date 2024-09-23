@@ -1,10 +1,71 @@
 /* Dashboard.css */
 .dashboard {
-  background-color: #f5f5f5;
+  background-color: #e0f7fa; /* Very light blue background */
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .dashboard h1 {
-  color: #333;
+  color: #00796b; /* Dark teal color for main heading */
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Larger size */
+  font-family: 'Arial', sans-serif; /* Stylish font */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
+
+.dashboard h2 {
+  color: #004d40; /* Darker teal for subheadings */
+  margin-top: 20px;
+  font-size: 2em; /* Larger size */
+  font-family: 'Arial', sans-serif;
+  border-bottom: 2px solid #00796b; /* Underline for emphasis */
+  padding-bottom: 5px; /* Padding for spacing */
+}
+
+.dashboard p {
+  color: #555;
+}
+
+.dashboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard li {
+  background-color: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .loading,
+.dashboard .error {
+  color: #d9534f; /* Bootstrap danger color */
+  font-weight: bold;
+}
+
+/* Navigation Links Styling */
+.dashboard-links {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  gap: 10px; /* Add space between links */
+  margin-bottom: 20px;
+}
+
+.dashboard-link {
+  color: #00796b; /* Teal link color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em; /* Slightly larger font */
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dashboard-link:hover {
+  background-color: #004d40; /* Dark teal on hover */
+  color: #ffffff; /* White text on hover */
+}
+
