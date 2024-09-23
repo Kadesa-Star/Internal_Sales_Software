@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sale List</title>
+</head>
+<body>
+    <h1>Sales List</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Sale ID</th>
+                <th>Product ID</th>
+                <th>Quantity Sold</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sale in sales %}
+            <tr>
+                <td>{{ sale.id }}</td>
+                <td>{{ sale.product_id }}</td>
+                <td>{{ sale.quantity_sold }}</td>
+                <td>{{ sale.date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
